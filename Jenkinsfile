@@ -11,7 +11,7 @@ pipeline {
 
         stage ('Invoke_pipeline') {
             steps {
-                build job: 'mb-pipeline-2', parameters: [
+                build job: 'pipeline-job-2', parameters: [
                 string(name: 'param1', value: "value1")
                 ], propagate: true, wait: true
             }
